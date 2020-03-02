@@ -1,0 +1,42 @@
+<%- include('../partials/header') -%>
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center">Add New Comment to <%= campground.name %></h1>
+        <div style="width: 30%; margin: 25px auto;">
+            <form action="/campgrounds/<%= campground._id %>/comments" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="comment[text]" placeholder="text">
+                </div>
+                <div id="newRating" class="form-group d-flex">
+                    <label id="s1" class="ratingStyle mb-0 rounded">
+                        <input type="radio" name="comment[rating]" value="<%= parseInt('1') %>" checked>
+                        <i class="fa fa-star fa-sm" aria-hidden="true"></i>
+                    </label>
+                    <label id="s2" class="ratingStyle mb-0 rounded">
+                        <input type="radio" name="comment[rating]" value="<%= parseInt('2') %>">
+                        <i class="fa fa-star-o fa-sm" aria-hidden="true"></i>
+                    </label>
+                    <label id="s3" class="ratingStyle mb-0 rounded">
+                        <input type="radio" name="comment[rating]" value="<%= parseInt('3') %>">
+                        <i class="fa fa-star-o fa-sm" aria-hidden="true"></i>
+                    </label>
+                    <label id="s4" class="ratingStyle mb-0 rounded">
+                        <input type="radio" name="comment[rating]" value="<%= parseInt('4') %>">
+                        <i class="fa fa-star-o fa-sm" aria-hidden="true"></i>
+                    </label>
+                    <label id="s5" class="ratingStyle mb-0 rounded">
+                        <input type="radio" name="comment[rating]" value="<%= parseInt('5') %>">
+                        <i class="fa fa-star-o fa-sm" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Submit!</button>
+                </div>
+            </form>
+            <a href="/campgrounds">Go Back</a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/jQuery/newRating.js"></script>
+<%- include('../partials/footer') -%>
+
