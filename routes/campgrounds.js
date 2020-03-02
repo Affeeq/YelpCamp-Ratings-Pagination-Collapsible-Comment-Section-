@@ -98,19 +98,17 @@ router.put("/:id",middleware.checkCampgroundOwnership, function(req, res){
 // DESTROY CAMPGROUND ROUTE
 router.delete("/:id",middleware.checkCampgroundOwnership, function(req, res){
    Campground.findByIdAndRemove(req.params.id, async function(err,campground){
-    if(err){
-      res.redirect("/campgrounds");
-    } else {
-      await Comment.deleteMany(
-        {_id: 
-          { $in: campground.comments}
-        }
-      );
-      res.redirect("/campgrounds");
-    }
-  });
+		try {
+			await Comment.deleteMany(
+			{_id: 
+			  { $in: campground.comments}
+			})
+		} catch(err) {
+			console.log(err);
+			res.redirect("/campgrounds");
+		}
+	});
 });
-
 
 module.exports = router;
 

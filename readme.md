@@ -2,6 +2,15 @@
 
 About: Similar to the Yelpcamp project on github.com/Affeeq/YelpCamp, it is a simpler version with a difference of having a rating system, pagination and collapsible comment section.
 
+Link: https://yelpcamp-v2-deployed.herokuapp.com/
+
+## To check the YelpCamp full version (without rating system, pagination, collapsible comment)
+Link: github.com/Affeeq/YelpCamp
+
+## Demo Account
+#username: user1
+#password: user123
+
 Front end: HTML5, CSS3, Javascript, Bootstrap, jQuery
 
 Back End: Node JS, Express JS, MongoDB
