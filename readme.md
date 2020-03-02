@@ -1,10 +1,12 @@
 #YelpCamp (Rating System, Pagination, Collapsible Comment Section)
 
+About: Similar to the Yelpcamp project on github.com/Affeeq/YelpCamp, it is a simpler version with a difference of having a rating system, pagination and collapsible comment section.
+
 Front end: HTML5, CSS3, Javascript, Bootstrap, jQuery
 
 Back End: Node JS, Express JS, MongoDB
 
-Features: User Authorization, Rating System, Pagination, Collapsible Comment Section
+Features: Simple User Authorization, Rating System, Pagination, Collapsible Comment Section
 
 Dependencies: Async, Body-Parser, Connect-flash, dotenv, ejs, express, express-session, locus, method-override, mongoose, passport, passport-local, passport-local-mongoose
 
