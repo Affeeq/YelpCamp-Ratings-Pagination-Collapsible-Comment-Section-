@@ -1,4 +1,4 @@
-#YelpCamp (Rating System, Pagination, Collapsible Comment Section)
+# YelpCamp (Rating System, Pagination, Collapsible Comment Section)
 
 About: Similar to the Yelpcamp project on github.com/Affeeq/YelpCamp, it is a simpler version with a difference of having a rating system, pagination and collapsible comment section.
 
